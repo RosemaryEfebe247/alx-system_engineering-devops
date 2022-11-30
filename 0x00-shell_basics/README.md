@@ -1,1 +1,1 @@
-To list contents of dir
+Home dir command
