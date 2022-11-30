@@ -1,1 +1,1 @@
-Print working directory
+To list contents of dir
