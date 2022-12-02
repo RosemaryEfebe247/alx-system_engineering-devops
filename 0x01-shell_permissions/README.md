@@ -1,1 +1,1 @@
-My group
+New owner
