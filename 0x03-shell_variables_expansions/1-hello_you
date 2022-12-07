@@ -1,2 +1,2 @@
 #!/bin/bash
-if [[ "$(whoami)" != '.' ]], echo "hello user"
+echo "hello user"
