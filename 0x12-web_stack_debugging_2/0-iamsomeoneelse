@@ -1,6 +1,2 @@
 #!/usr/bin/env bash
-if [[ "$1" ]]; then
-	echo "$1"
-else
-	echo "$(whoami)"
-fi
+sudo -u "$1" whoami
