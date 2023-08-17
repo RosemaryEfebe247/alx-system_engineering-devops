@@ -2,6 +2,7 @@
 server {
     listen 80;
     server_name 100.27.5.30;
+	server_name 127.0.0.1;
 	add_header X-Served-By $hostname;
 
     location /airbnb-onepage/ {
