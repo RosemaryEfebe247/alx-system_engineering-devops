@@ -1,0 +1,19 @@
+server {
+
+    listen 80;
+    server_name 100.27.5.30;
+    server_name 127.0.0.1;
+    add_header X-Served-By $hostname;
+
+    location /airbnb-dynamic/number_odd_or_even/(int) {
+        proxy_pass http://127.0.0.1:5001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+
+    }
+
+    location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+        try_files $uri $uri/ =404;
+    }
